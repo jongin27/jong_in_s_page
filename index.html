@@ -84,12 +84,11 @@
         }
     </style>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             fetch("http://spartacodingclub.shop/sparta_api/weather/seoul").then(res => res.json()).then(data => {
-                let number = data['temp']
-                console.log(data)
-                $('#temp').text(number)
-            })
+                    let number = data['temp']
+                    $('#temp').text(number)
+                })
         })
     </script>
 </head>
